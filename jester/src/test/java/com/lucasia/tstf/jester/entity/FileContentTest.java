@@ -18,11 +18,11 @@ public class FileContentTest {
     public void testFileContent() throws URISyntaxException, IOException {
         URL fileURL = this.getClass().getResource("./xml/person-ian.xml");
 
-        FileContent fileContent = new FileContent(new File(fileURL.getFile()));
+        FileURIContent fileContent = new FileURIContent(new File(fileURL.getFile()));
 
         final InputStream contentStream = fileContent.getContentStream();
 
-        final String content = Content.convertStreamToString(contentStream);
+        final String content = StringContent.streamToString(contentStream);
 
         Assert.assertEquals("<person><name>Ian</name></person>", content);
 

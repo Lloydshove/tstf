@@ -2,11 +2,13 @@ package com.lucasia.tstf.jester.repo;
 
 import com.lucasia.tstf.jester.entity.Content;
 
-import java.util.*;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Queue;
 
 /**
-* User: lucasia
-*/
+ * User: lucasia
+ */
 public class SimpleContentQueue implements ContentQueue {
     private Queue<Content> queue = new LinkedList<Content>();
 

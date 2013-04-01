@@ -11,14 +11,14 @@ import java.net.URL;
 /**
  * User: lucasia
  */
-public class WebContentTest {
+public class WebURIContentTest {
     @Test
     public void testFileContent() throws URISyntaxException, IOException {
         URL webURL = new URL("http://www-personal.umich.edu/~lucian/");
 
-        final InputStream contentStream = new WebContent(webURL.toURI()).getContentStream();
+        final InputStream contentStream = new WebURIContent(webURL.toURI()).getContentStream();
 
-        final String content = Content.convertStreamToString(contentStream);
+        final String content = StringContent.streamToString(contentStream);
 
         Assert.assertTrue(content.startsWith("<html>"));
 

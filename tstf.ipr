@@ -187,8 +187,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/jester" vcs="svn" />
-    <mapping directory="$PROJECT_DIR$/victorian" vcs="svn" />
   </component>
   <component name="libraryTable">
     <library name="Maven: junit:junit:4.11">

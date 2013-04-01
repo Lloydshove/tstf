@@ -7,22 +7,12 @@ import java.net.URI;
 /**
  * User: lucasia
  */
-public abstract class Content {
-    private URI uri;
+public interface Content<T> {
 
-    protected Content(URI uri) {
-        this.uri = uri;
-    }
+    URI getURI();
 
-    public URI getUri() {
-        return uri;
-    }
+    T getContent();
 
-    public abstract InputStream getContentStream() throws IOException;
-
-    public static String convertStreamToString(java.io.InputStream is) {
-        java.util.Scanner s = new java.util.Scanner(is).useDelimiter("\\A");
-        return s.hasNext() ? s.next() : "";
-    }
+    InputStream getContentStream() throws IOException;
 
 }

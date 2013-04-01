@@ -7,18 +7,20 @@ import java.net.URLConnection;
 
 /**
  * User: lucasia
- *
- * TODO: add Proxy as a property
  */
-public class WebContent extends Content {
-    public WebContent(URI uri) {
-        super(uri);
+public abstract class URIContent<T> implements Content<T> {
+    private URI uri;
+
+    protected URIContent(URI uri) {
+        this.uri = uri;
     }
 
+    public URI getURI() {
+        return uri;
+    }
 
-    @Override
     public InputStream getContentStream() throws IOException {
-        URLConnection connection = getUri().toURL().openConnection();
+        URLConnection connection = uri.toURL().openConnection();
         return connection.getInputStream();
     }
 }
