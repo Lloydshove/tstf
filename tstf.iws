@@ -9,11 +9,11 @@
     <file path="/Dummy.txt" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364776723304" ignored="false" />
     <file path="/AppTest.java" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364776839879" ignored="false" />
     <file path="/pom.xml" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364777299065" ignored="false" />
-    <file path="/fragment.java" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364779142875" ignored="false" />
+    <file path="/fragment.java" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364785120903" ignored="false" />
     <file path="/ContentSourceTest.java" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364780820620" ignored="false" />
     <file path="/Content.java" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364783274710" ignored="false" />
     <file path="/ContentIterator.java" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364778634266" ignored="false" />
-    <file path="/ContentSource.java" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364780504373" ignored="false" />
+    <file path="/ContentSource.java" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364785043058" ignored="false" />
     <file path="/ContentSourceImpl.java" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364780859709" ignored="false" />
     <file path="/QueueContentSource.java" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364780662526" ignored="false" />
     <file path="/a.dummy" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364780928926" ignored="false" />
@@ -81,9 +81,9 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="QueueContentSourceTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/inbound/QueueContentSourceTest.java">
+        <entry file="file://$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/repo/QueueContentSourceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0">
+            <state line="21" column="0" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,9 +92,9 @@
         </entry>
       </file>
       <file leaf-file-name="Content.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/Content.java">
+        <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/Content.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="5" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
+            <state line="24" column="5" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,10 +111,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringContent.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/StringContent.java">
+      <file leaf-file-name="StringContent.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/StringContent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="32" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
+            <state line="22" column="32" selection-start="494" selection-end="494" vertical-scroll-proportion="0.5729167">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,20 +123,18 @@
         </entry>
       </file>
       <file leaf-file-name="FileContent.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/FileContent.java">
+        <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/FileContent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="44" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="7" column="42" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileContentTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/FileContentTest.java">
+      <file leaf-file-name="FileContentTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/entity/FileContentTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="61" selection-start="601" selection-end="601" vertical-scroll-proportion="0.63829786">
+            <state line="22" column="61" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,21 +151,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueueContentSource.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/inbound/QueueContentSource.java">
+      <file leaf-file-name="SimpleContentQueue.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/repo/SimpleContentQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0">
+            <state line="14" column="52" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#235#244#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#238#247#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContentSource.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/inbound/ContentSource.java">
+      <file leaf-file-name="ContentQueue.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/repo/ContentQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="24" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
+            <state line="7" column="17" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -191,12 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/ContentTest.java" />
-        <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/ContentIterator.java" />
-        <option value="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/inbound/ContentSourceImpl.java" />
-        <option value="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/inbound/ContentSourceTest.java" />
-        <option value="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/inbound/ContentSourceImplTest.java" />
         <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/inbound/ContentSourceImpl.java" />
         <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/inbound/ContentSource.java" />
         <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/inbound/QueueContentSource.java" />
@@ -207,6 +200,12 @@
         <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/FileContent.java" />
         <option value="$PROJECT_DIR$/jester/src/test/resources/person-ian.xml" />
         <option value="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/FileContentTest.java" />
+        <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/QueueContentSource.java" />
+        <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/ContentSource.java" />
+        <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/ContentQueue.java" />
+        <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/SimpleContentQueue.java" />
+        <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/queue/ContentQueue.java" />
+        <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/repo/SimpleContentQueue.java" />
       </list>
     </option>
   </component>
@@ -381,6 +380,10 @@
               <option name="myItemId" value="jester" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -399,6 +402,90 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jester" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tstf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tstf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jester" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jester" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tstf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tstf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jester" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jester" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -407,7 +494,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Project" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/inbound" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/queue" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="OverrideImplement.combined" value="false" />
@@ -432,8 +519,10 @@
       <recent name="$PROJECT_DIR$/jester/src/test/resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.lucasia.tstf.jester.inbound" />
+      <recent name="com.lucasia.tstf.jester.queue" />
+      <recent name="com.lucasia.tstf.jester.content" />
       <recent name="com.lucasia.tstf.jester" />
+      <recent name="com.lucasia.tstf.jester.inbound" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.FileContentTest.testFileContent">
@@ -463,8 +552,8 @@
       <module name="jester" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.lucasia.tstf.jester.inbound" />
-      <option name="MAIN_CLASS_NAME" value="com.lucasia.tstf.jester.inbound.QueueContentSourceTest" />
+      <option name="PACKAGE_NAME" value="com.lucasia.tstf.jester.repo" />
+      <option name="MAIN_CLASS_NAME" value="com.lucasia.tstf.jester.repo.QueueContentSourceTest" />
       <option name="METHOD_NAME" value="testQueueDequeue" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -573,8 +662,8 @@
       <module name="jester" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.lucasia.tstf.jester" />
-      <option name="MAIN_CLASS_NAME" value="com.lucasia.tstf.jester.FileContentTest" />
+      <option name="PACKAGE_NAME" value="com.lucasia.tstf.jester.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.lucasia.tstf.jester.entity.FileContentTest" />
       <option name="METHOD_NAME" value="testFileContent" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -654,8 +743,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15551306" sideWeight="0.69112426" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21223709" sideWeight="0.67218935" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32781065" sideWeight="0.91841936" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22625877" sideWeight="0.74201185" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25798815" sideWeight="0.91841936" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -773,62 +862,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/inbound/ContentSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="24" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/inbound/QueueContentSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#235#244#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/StringContent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="32" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/src.zip!/java/io/IOException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="6" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/FileContent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="44" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/Content.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="5" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/inbound/QueueContentSourceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -839,9 +876,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/FileContentTest.java">
+    <entry file="file://$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/entity/FileContentTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="61" selection-start="601" selection-end="601" vertical-scroll-proportion="0.63829786">
+        <state line="22" column="61" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/repo/QueueContentSourceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="584" selection-end="584" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/repo/ContentQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="17" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/repo/SimpleContentQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="52" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#238#247#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/FileContent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="42" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/Content.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="5" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/StringContent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="32" selection-start="494" selection-end="494" vertical-scroll-proportion="0.5729167">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
