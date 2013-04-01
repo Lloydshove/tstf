@@ -3,7 +3,6 @@ package com.lucasia.tstf.jester.entity;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
-import java.net.URLConnection;
 
 /**
  * User: lucasia
@@ -19,8 +18,11 @@ public abstract class URIContent<T> implements Content<T> {
         return uri;
     }
 
-    public InputStream getContentStream() throws IOException {
-        URLConnection connection = uri.toURL().openConnection();
-        return connection.getInputStream();
+    public InputStream getContentStream() {
+        try {
+            return uri.toURL().openStream();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

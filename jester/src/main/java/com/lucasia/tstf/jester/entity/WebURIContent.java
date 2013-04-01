@@ -1,6 +1,5 @@
 package com.lucasia.tstf.jester.entity;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
 
@@ -15,10 +14,6 @@ public class WebURIContent extends URIContent<InputStream> {
 
     @Override
     public InputStream getContent() {
-        try {
-            return getContentStream();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        return getContentStream();
     }
 }

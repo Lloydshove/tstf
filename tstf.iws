@@ -1,30 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" name="Default" comment="split out content into file and web uri content classes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/FileURIContent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/WebURIContent.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/FileContent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/WebContent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/repo/QueueContentSourceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/jester/src/test/resources/person-ian.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/Content.java" afterPath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/URIContent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/entity/WebContentTest.java" afterPath="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/entity/WebURIContentTest.java" />
+    <list default="true" readonly="true" id="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/Content.java" afterPath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/Content.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/entity/FileContentTest.java" afterPath="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/entity/FileContentTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/repo/SimpleContentQueue.java" afterPath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/repo/SimpleContentQueue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/StringContent.java" afterPath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/StringContent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tstf.ipr" afterPath="$PROJECT_DIR$/tstf.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/URIContent.java" afterPath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/URIContent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/WebURIContent.java" afterPath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/WebURIContent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tstf.iws" afterPath="$PROJECT_DIR$/tstf.iws" />
     </list>
     <ignored path="tstf.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364789983572" ignored="false" />
+    <file path="/Dummy.txt" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364790000641" ignored="false" />
     <file path="/AppTest.java" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364776839879" ignored="false" />
     <file path="/pom.xml" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364777299065" ignored="false" />
     <file path="/fragment.java" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364789828546" ignored="false" />
     <file path="/ContentSourceTest.java" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364780820620" ignored="false" />
-    <file path="/Content.java" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364789695748" ignored="false" />
+    <file path="/Content.java" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364790333431" ignored="false" />
     <file path="/ContentIterator.java" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364778634266" ignored="false" />
     <file path="/ContentSource.java" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364785043058" ignored="false" />
     <file path="/ContentSourceImpl.java" changelist="b7aa1580-a922-4b0c-95f0-4a92c7b64c95" time="1364780859709" ignored="false" />
@@ -156,19 +146,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Scanner.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/src.zip!/java/util/Scanner.java">
+      <file leaf-file-name="URIContent.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/URIContent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="347" column="19" selection-start="14372" selection-end="14372" vertical-scroll-proportion="0.0">
+            <state line="30" column="39" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="URIContent.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/URIContent.java">
+      <file leaf-file-name="URL.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/src.zip!/java/net/URL.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="34" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
+            <state line="1035" column="29" selection-start="39878" selection-end="39878" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -177,7 +167,7 @@
       <file leaf-file-name="WebURIContent.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/WebURIContent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="16" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
+            <state line="17" column="0" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -188,7 +178,7 @@
       <file leaf-file-name="Content.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/Content.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="6" selection-start="200" selection-end="200" vertical-scroll-proportion="0.30708662">
+            <state line="5" column="74" selection-start="94" selection-end="94" vertical-scroll-proportion="0.12931034">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -216,7 +206,6 @@
       <list>
         <option value="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/entity/ContentTest.java" />
         <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/FileContent.java" />
-        <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/Content.java" />
         <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/FileURIContent.java" />
         <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/StringContent.java" />
         <option value="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/repo/ContentQueueTest.java" />
@@ -224,12 +213,13 @@
         <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/repo/SimpleContentQueue.java" />
         <option value="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/repo/QueueContentSourceTest.java" />
         <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/WebContent.java" />
-        <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/URIContent.java" />
         <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/InputStreamContent.java" />
         <option value="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/entity/URIContentTest.java" />
         <option value="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/entity/WebURIContentTest.java" />
         <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/InputStreamURIContent.java" />
         <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/WebURIContent.java" />
+        <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/URIContent.java" />
+        <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/Content.java" />
       </list>
     </option>
   </component>
@@ -827,6 +817,11 @@
       <created>1364776404024</created>
       <updated>1364776404024</updated>
     </task>
+    <task id="LOCAL-00001" summary="split out content into file and web uri content classes">
+      <created>1364790008424</created>
+      <updated>1364790008424</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -842,13 +837,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30887574" sideWeight="0.07711919" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19103773" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19103773" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15551306" sideWeight="0.69112426" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23301588" sideWeight="0.8089623" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25589624" sideWeight="0.9993667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23301588" sideWeight="0.7441038" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25589624" sideWeight="0.9993667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289941" sideWeight="0.4952199" order="1" side_tool="false" content_ui="tabs" />
@@ -917,11 +912,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/junit/framework/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11-sources.jar!/junit/framework/Assert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="13" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" />
@@ -989,13 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/StringContent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="5" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/entity/WebURIContentTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0">
@@ -1005,7 +988,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/WebURIContent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
+        <state line="17" column="0" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1019,16 +1002,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/StringContent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="5" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_17.jdk/Contents/Home/src.zip!/java/net/URL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1035" column="29" selection-start="39878" selection-end="39878" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/URIContent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="34" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
+        <state line="30" column="39" selection-start="596" selection-end="596" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/Content.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="6" selection-start="200" selection-end="200" vertical-scroll-proportion="0.30708662">
+        <state line="5" column="74" selection-start="94" selection-end="94" vertical-scroll-proportion="0.12931034">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

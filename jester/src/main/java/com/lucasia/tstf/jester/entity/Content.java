@@ -1,6 +1,5 @@
 package com.lucasia.tstf.jester.entity;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
 
@@ -13,6 +12,6 @@ public interface Content<T> {
 
     T getContent();
 
-    InputStream getContentStream() throws IOException;
+    InputStream getContentStream();
 
 }
