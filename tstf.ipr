@@ -28,6 +28,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="jester" />
         <module name="victorian" />
       </profile>
     </annotationProcessing>
@@ -172,6 +173,7 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/jester/jester.iml" filepath="$PROJECT_DIR$/jester/jester.iml" />
       <module fileurl="file://$PROJECT_DIR$/tstf.iml" filepath="$PROJECT_DIR$/tstf.iml" />
       <module fileurl="file://$PROJECT_DIR$/victorian/victorian.iml" filepath="$PROJECT_DIR$/victorian/victorian.iml" />
     </modules>
@@ -185,6 +187,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/jester" vcs="svn" />
     <mapping directory="$PROJECT_DIR$/victorian" vcs="svn" />
   </component>
   <component name="libraryTable">
@@ -210,22 +213,6 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-sources.jar!/" />
       </SOURCES>
     </library>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.6</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
 

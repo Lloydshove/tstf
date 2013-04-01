@@ -1,25 +1,29 @@
 package com.lucasia.tstf.jester;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.net.URI;
 
 /**
  * User: lucasia
  */
-public class Content {
+public abstract class Content {
 
     private URI id;
-    private String content;
 
-    public Content(URI id, String content) {
+    protected Content(URI id) {
         this.id = id;
-        this.content = content;
     }
 
     public URI getId() {
         return id;
     }
 
-    public String getContent() {
-        return content;
+    public abstract InputStream getContentStream() throws IOException;
+
+    public static String convertStreamToString(java.io.InputStream is) {
+        java.util.Scanner s = new java.util.Scanner(is).useDelimiter("\\A");
+        return s.hasNext() ? s.next() : "";
     }
+
 }

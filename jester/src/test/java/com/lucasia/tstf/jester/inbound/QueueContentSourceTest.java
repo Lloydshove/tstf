@@ -1,6 +1,7 @@
 package com.lucasia.tstf.jester.inbound;
 
 import com.lucasia.tstf.jester.Content;
+import com.lucasia.tstf.jester.StringContent;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -14,8 +15,8 @@ public class QueueContentSourceTest {
 
     @Test
     public void testQueueDequeue() throws URISyntaxException {
-        Content a = new Content(new URI("http://foo/a"), "a");
-        Content b = new Content(new URI("http://foo/b"), "b");
+        Content a = new StringContent(new URI("http://foo/a"), "a");
+        Content b = new StringContent(new URI("http://foo/b"), "b");
 
         ContentSource contentSource = new QueueContentSource();
 
