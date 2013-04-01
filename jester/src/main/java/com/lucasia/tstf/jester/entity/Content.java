@@ -8,15 +8,14 @@ import java.net.URI;
  * User: lucasia
  */
 public abstract class Content {
+    private URI uri;
 
-    private URI id;
-
-    protected Content(URI id) {
-        this.id = id;
+    protected Content(URI uri) {
+        this.uri = uri;
     }
 
-    public URI getId() {
-        return id;
+    public URI getUri() {
+        return uri;
     }
 
     public abstract InputStream getContentStream() throws IOException;
