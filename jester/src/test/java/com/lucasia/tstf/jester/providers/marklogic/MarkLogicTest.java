@@ -3,8 +3,9 @@ package com.lucasia.tstf.jester.providers.marklogic;
 import com.lucasia.tstf.jester.entity.Content;
 import com.lucasia.tstf.jester.entity.StringContent;
 import com.lucasia.tstf.jester.dao.RESTDao;
+import com.lucasia.tstf.jester.io.IORuntimeException;
 import com.lucasia.tstf.jester.security.PasswordAuthenticator;
-import com.lucasia.tstf.jester.util.IOUtil;
+import com.lucasia.tstf.jester.io.IOUtil;
 import org.custommonkey.xmlunit.XMLAssert;
 import org.junit.Assert;
 import org.junit.Before;
@@ -14,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.*;
 
@@ -61,15 +63,22 @@ public class MarkLogicTest {
 
         final RESTDao dao = new RESTDao();
 
-        // save content
-        dao.save(content);
+
+        dao.save(content);  // save content
 
         // retrieve content
         Content retrievedContent = dao.get(content.getURI());
         XMLAssert.assertXMLEqual(contentStr, IOUtil.streamToString(retrievedContent.getContentStream()));
 
-        // clean up
-        dao.delete(content);
+
+        dao.delete(content);   // clean up
+
+
+        try {
+            dao.get(content.getURI());    // should no longer be there
+        } catch (IORuntimeException e) {
+            Assert.assertEquals(FileNotFoundException.class, e.getWrappedException().getClass());
+        }
     }
 
 

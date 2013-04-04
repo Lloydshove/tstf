@@ -1,6 +1,6 @@
 package com.lucasia.tstf.jester.entity;
 
-import com.lucasia.tstf.jester.util.IOUtil;
+import com.lucasia.tstf.jester.io.IOUtil;
 import org.junit.Assert;
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.lucasia.tstf.jester.util;
+package com.lucasia.tstf.jester.io;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;

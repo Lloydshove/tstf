@@ -2,7 +2,8 @@ package com.lucasia.tstf.jester.dao;
 
 import com.lucasia.tstf.jester.entity.Content;
 import com.lucasia.tstf.jester.entity.URIContent;
-import com.lucasia.tstf.jester.util.IOUtil;
+import com.lucasia.tstf.jester.io.IORuntimeException;
+import com.lucasia.tstf.jester.io.IOUtil;
 
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -18,12 +19,12 @@ public class RESTDao implements Dao<URI, Content> {
     @Override
     public URIContent get(URI uri) {
         try {
-            final HttpURLConnection conn = (HttpURLConnection) uri.toURL().openConnection();
+            final HttpURLConnection conn = (HttpURLConnection) getUrl(uri).openConnection();
             conn.setRequestMethod("GET"); // defaults to GET, but be explicit
             return new URIContent(uri, conn.getInputStream());
 
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new IORuntimeException(e);
         }
     }
 
@@ -31,7 +32,7 @@ public class RESTDao implements Dao<URI, Content> {
     public void save(Content content) {
         try  {
 
-            final URL url = content.getURI().toURL();
+            final URL url = getUrl(content.getURI());
             final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("PUT");
             conn.setDoOutput(true);
@@ -48,14 +49,15 @@ public class RESTDao implements Dao<URI, Content> {
             validateResponse(conn);
 
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new IORuntimeException(e);
         }
     }
 
     @Override
     public void delete(Content content) {
         try {
-            final URL url = content.getURI().toURL();
+            final URL url = getUrl(content.getURI());
+
             final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("DELETE");
             conn.setDoOutput(true);
@@ -64,7 +66,7 @@ public class RESTDao implements Dao<URI, Content> {
             validateResponse(conn);
 
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new IORuntimeException(e);
         }
     }
 
@@ -76,4 +78,15 @@ public class RESTDao implements Dao<URI, Content> {
             throw new RuntimeException("Response code + '" + conn.getResponseCode() + "'. " + error);
         }
     }
+
+    private URL getUrl(URI uri) {
+        final URL url;
+        try {
+            url = uri.toURL();
+        } catch (MalformedURLException e) {
+            throw new IORuntimeException(e);
+        }
+        return url;
+    }
+
 }
