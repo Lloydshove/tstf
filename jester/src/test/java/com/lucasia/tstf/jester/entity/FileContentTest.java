@@ -19,7 +19,7 @@ public class FileContentTest {
     public void testFileContent() throws URISyntaxException, IOException {
         URL fileURL = this.getClass().getResource("./xml/person-ian.xml");
 
-        FileURIContent fileContent = new FileURIContent(new File(fileURL.getFile()));
+        FileContent fileContent = new FileContent(new File(fileURL.getFile()));
 
         final InputStream contentStream = fileContent.getContentStream();
 

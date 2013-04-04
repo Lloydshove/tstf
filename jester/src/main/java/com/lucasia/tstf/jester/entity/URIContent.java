@@ -7,24 +7,32 @@ import java.net.URI;
 /**
  * User: lucasia
  */
-public abstract class URIContent<T> implements Content<T> {
+public class URIContent implements Content<InputStream> {
     private URI uri;
+    private InputStream inputStream;
 
-    protected URIContent(URI uri) {
+    public URIContent(URI uri) throws IOException {
         this.uri = uri;
+        this.inputStream = uri.toURL().openStream();
     }
 
+    public URIContent(URI uri, InputStream inputStream) {
+        this.uri = uri;
+        this.inputStream = inputStream;
+    }
+
+    @Override
     public URI getURI() {
         return uri;
     }
 
-    public InputStream getContentStream() {
-        try {
-            return uri.toURL().openStream();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+    @Override
+    public InputStream getContent() {
+        return inputStream;
     }
 
-
+    @Override
+    public InputStream getContentStream() {
+        return inputStream;
+    }
 }

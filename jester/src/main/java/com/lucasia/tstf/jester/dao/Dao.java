@@ -3,9 +3,9 @@ package com.lucasia.tstf.jester.dao;
 /**
  * User: lucasia
  */
-public interface Dao<T, E> {
+public interface Dao<K, E> {
 
-    E get(T key);
+    E get(K key);
 
     void save(E entity);
 

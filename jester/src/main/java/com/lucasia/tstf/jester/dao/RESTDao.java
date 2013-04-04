@@ -1,7 +1,7 @@
 package com.lucasia.tstf.jester.dao;
 
 import com.lucasia.tstf.jester.entity.Content;
-import com.lucasia.tstf.jester.entity.WebURIContent;
+import com.lucasia.tstf.jester.entity.URIContent;
 import com.lucasia.tstf.jester.util.IOUtil;
 
 import java.io.IOException;
@@ -17,11 +17,11 @@ public class RESTDao implements Dao<URI, Content> {
 
 
     @Override
-    public WebURIContent get(URI uri) {
+    public URIContent get(URI uri) {
         try {
             final HttpURLConnection conn = (HttpURLConnection) uri.toURL().openConnection();
             conn.setRequestMethod("GET"); // defaults to GET, but be explicit
-            return new WebURIContent(uri, conn.getInputStream());
+            return new URIContent(uri, conn.getInputStream());
 
         } catch (IOException e) {
             throw new RuntimeException(e);

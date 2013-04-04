@@ -12,12 +12,12 @@ import java.net.URL;
 /**
  * User: lucasia
  */
-public class WebURIContentTest {
+public class URIContentTest {
     @Test
     public void testFileContent() throws URISyntaxException, IOException {
         URL webURL = new URL("http://www-personal.umich.edu/~lucian/");
 
-        final InputStream contentStream = new WebURIContent(webURL.toURI()).getContentStream();
+        final InputStream contentStream = new URIContent(webURL.toURI()).getContentStream();
 
         final String content = IOUtil.streamToString(contentStream);
 
