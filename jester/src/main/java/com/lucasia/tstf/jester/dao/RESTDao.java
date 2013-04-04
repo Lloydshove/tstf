@@ -7,6 +7,7 @@ import com.lucasia.tstf.jester.util.IOUtil;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URL;
 
@@ -14,8 +15,6 @@ import java.net.URL;
  * User: lucasia
  */
 public class RESTDao implements Dao<URI, Content> {
-
-
     @Override
     public URIContent get(URI uri) {
         try {
@@ -30,9 +29,9 @@ public class RESTDao implements Dao<URI, Content> {
 
     @Override
     public void save(Content content) {
-        try {
-            final URL url = content.getURI().toURL();
+        try  {
 
+            final URL url = content.getURI().toURL();
             final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("PUT");
             conn.setDoOutput(true);
@@ -44,6 +43,7 @@ public class RESTDao implements Dao<URI, Content> {
             out.write(str);
             out.flush();
             out.close();
+            conn.disconnect();
 
             validateResponse(conn);
 

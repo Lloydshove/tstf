@@ -13,7 +13,6 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.xml.sax.SAXException;
 
 import java.io.IOException;
 import java.net.*;
@@ -22,7 +21,7 @@ import java.net.*;
  * User: lucasia
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"/META-INF/spring/spring-context.xml"})
+@ContextConfiguration(locations = {"/spring-context.xml"})
 public class MarkLogicTest {
 
     @Autowired

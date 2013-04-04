@@ -2,6 +2,9 @@ package com.lucasia.tstf.jester.util;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URL;
 import java.util.Scanner;
 
 /**
@@ -16,4 +19,5 @@ public class IOUtil {
     public static InputStream stringToStream(String str) {
         return new ByteArrayInputStream(str.getBytes());
     }
+
 }

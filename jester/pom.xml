@@ -14,5 +14,17 @@
     <version>1.0-SNAPSHOT</version>
     <name>jester</name>
 
+    <!-- only required for intellij
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+    -->
 
 </project>
