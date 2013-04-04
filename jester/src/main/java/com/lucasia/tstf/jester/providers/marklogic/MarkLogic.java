@@ -49,12 +49,5 @@ public class MarkLogic {
         return serverURL.resolve(docPrefix + docuURI.toASCIIString());
     }
 
-    public static void main(String[] args) {
 
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("/META-INF/spring/spring-context.xml");
-        MarkLogic markLogic = (MarkLogic) context.getBean("markLogic");
-
-        System.out.println(markLogic);
-
-    }
 }
