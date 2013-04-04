@@ -3,8 +3,8 @@ package com.lucasia.tstf.jester.providers.marklogic;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 
-import javax.sql.DataSource;
-import java.sql.DriverManager;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 /**
  * User: lucasia
@@ -13,12 +13,20 @@ import java.sql.DriverManager;
 public class MarkLogic {
     private String user;
     private String password;
-    private String url;
+    private URI serverURL;
+    private String docPrefix;
 
-    public MarkLogic(String user, String password, String url) {
+    public MarkLogic(String user, String password, String serverURL, String docPrefix) {
         this.user = user;
         this.password = password;
-        this.url = url;
+        try {
+            this.serverURL = new URI(serverURL);
+        } catch (URISyntaxException e) {
+            throw new RuntimeException(e);
+        }
+
+        this.docPrefix = docPrefix;
+
     }
 
     public String getUser() {
@@ -29,11 +37,19 @@ public class MarkLogic {
         return password;
     }
 
-    public String getUrl() {
-        return url;
+    public URI getServerURL() {
+        return serverURL;
     }
 
-    public static void main(String[] args){
+    public String getDocPrefix() {
+        return docPrefix;
+    }
+
+    public URI getDocURI(URI docuURI) {
+        return serverURL.resolve(docPrefix + docuURI.toASCIIString());
+    }
+
+    public static void main(String[] args) {
 
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("/META-INF/spring/spring-context.xml");
         MarkLogic markLogic = (MarkLogic) context.getBean("markLogic");

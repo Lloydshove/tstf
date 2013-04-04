@@ -1,9 +1,9 @@
 package com.lucasia.tstf.jester.entity;
 
-import java.io.ByteArrayInputStream;
+import com.lucasia.tstf.jester.util.IOUtil;
+
 import java.io.InputStream;
 import java.net.URI;
-import java.util.Scanner;
 
 /**
  * User: lucasia
@@ -24,20 +24,11 @@ public class StringContent implements Content<String> {
 
     @Override
     public InputStream getContentStream() {
-        return stringToStream(content);
+        return IOUtil.stringToStream(content);
     }
 
     public String getContent() {
         return content;
     }
 
-    public static String streamToString(InputStream is) {
-        Scanner s = new Scanner(is).useDelimiter("\\A");
-        return s.hasNext() ? s.next() : "";
-    }
-
-
-    public static InputStream stringToStream(String str) {
-        return new ByteArrayInputStream(str.getBytes());
-    }
 }

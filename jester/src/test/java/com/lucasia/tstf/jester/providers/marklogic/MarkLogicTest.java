@@ -1,20 +1,22 @@
 package com.lucasia.tstf.jester.providers.marklogic;
 
+import com.lucasia.tstf.jester.entity.Content;
 import com.lucasia.tstf.jester.entity.StringContent;
+import com.lucasia.tstf.jester.dao.RESTDao;
 import com.lucasia.tstf.jester.security.PasswordAuthenticator;
+import com.lucasia.tstf.jester.util.IOUtil;
+import org.custommonkey.xmlunit.XMLAssert;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.xml.sax.SAXException;
 
 import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URLConnection;
+import java.net.*;
 
 /**
  * User: lucasia
@@ -31,7 +33,8 @@ public class MarkLogicTest {
         Assert.assertNotNull(markLogic);
         Assert.assertNotNull(markLogic.getUser());
         Assert.assertNotNull(markLogic.getPassword());
-        Assert.assertNotNull(markLogic.getUrl());
+        Assert.assertNotNull(markLogic.getServerURL());
+        Assert.assertNotNull(markLogic.getDocPrefix());
     }
 
     @Before
@@ -40,15 +43,34 @@ public class MarkLogicTest {
     }
 
     @Test
-    @Ignore // integration test
-    public void testRetrieve() throws URISyntaxException, IOException {
-        String json = "{\"two\":{\"child\":\"I come to bury Caesar, not to praise him.\"}}";
+    // @Ignore // integration test
 
-        final URI serverURI = new URI(markLogic.getUrl() + "/v1/documents?uri=/json/two.json&format=json");
+    /**
+     *  Equivalent of:
+     *  curl --anyauth --user user:pass -X PUT -d@'./two.json' 'http://server:port/v1/documents?uri=/json/two.json'
+     *  curl --anyauth --user user:pass -X GET 'http://server:port/v1/documents?uri=/json/two.json'
+     *  curl --anyauth --user user:pass -X DELETE -i 'http://server:port:8003/v1/documents?uri=/xml/pom.xml'
+     *
+     */
+    public void testCreateAndRetrieve() throws Exception {
+        // define content to add
+        final String contentStr = "<text>Hello World!</text>";
+        final URI contentURI = new URI("/xml/hello-world.xml");
 
-        final URLConnection connection = serverURI.toURL().openConnection();
+        final StringContent content = new StringContent(markLogic.getDocURI(contentURI), contentStr);
 
-        Assert.assertEquals(json, StringContent.streamToString(connection.getInputStream()));
+
+        final RESTDao dao = new RESTDao();
+
+        // save content
+        dao.save(content);
+
+        // retrieve content
+        Content retrievedContent = dao.get(content.getURI());
+        XMLAssert.assertXMLEqual(contentStr, IOUtil.streamToString(retrievedContent.getContentStream()));
+
+        // clean up
+        dao.delete(content);
     }
 
 

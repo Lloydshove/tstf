@@ -14,4 +14,6 @@ public interface Content<T> {
 
     InputStream getContentStream();
 
+    // TODO: add content type (xml, json)
+
 }

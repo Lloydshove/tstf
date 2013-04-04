@@ -1,5 +1,6 @@
 package com.lucasia.tstf.jester.entity;
 
+import com.lucasia.tstf.jester.util.IOUtil;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -22,7 +23,7 @@ public class FileContentTest {
 
         final InputStream contentStream = fileContent.getContentStream();
 
-        final String content = StringContent.streamToString(contentStream);
+        final String content = IOUtil.streamToString(contentStream);
 
         Assert.assertEquals("<person><name>Ian</name></person>", content);
 
