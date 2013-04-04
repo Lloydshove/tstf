@@ -2,22 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98e2193e-8768-4c80-ad22-b67c8a582099" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/io/IORuntimeException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/util/IOUtil.java" afterPath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/io/IOUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/entity/FileContentTest.java" afterPath="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/entity/FileContentTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicTest.java" afterPath="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/dao/RESTDao.java" afterPath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/dao/RESTDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/StringContent.java" afterPath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/entity/StringContent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/entity/URIContentTest.java" afterPath="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/entity/URIContentTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicDAOTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicInit.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicInitTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/dao/RESTDao.java" afterPath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicDAO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogic.java" afterPath="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicConfig.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicTest.java" afterPath="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicConfigTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jester/src/main/resources/spring-context.xml" afterPath="$PROJECT_DIR$/jester/src/main/resources/spring-context.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tstf-app.iws" afterPath="$PROJECT_DIR$/tstf-app.iws" />
     </list>
     <ignored path="tstf-app.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="98e2193e-8768-4c80-ad22-b67c8a582099" time="1365074925234" ignored="false" />
-    <file path="/fragment.java" changelist="98e2193e-8768-4c80-ad22-b67c8a582099" time="1365074925234" ignored="false" />
-    <file path="/MarkLogicTest.java" changelist="98e2193e-8768-4c80-ad22-b67c8a582099" time="1365087020387" ignored="false" />
+    <file path="/fragment.java" changelist="98e2193e-8768-4c80-ad22-b67c8a582099" time="1365088280692" ignored="false" />
+    <file path="/MarkLogicTest.java" changelist="98e2193e-8768-4c80-ad22-b67c8a582099" time="1365088185840" ignored="false" />
     <file path="/RESTDao.java" changelist="98e2193e-8768-4c80-ad22-b67c8a582099" time="1365086641317" ignored="false" />
     <file path="/IORuntimeException.java" changelist="98e2193e-8768-4c80-ad22-b67c8a582099" time="1365086802507" ignored="false" />
+    <file path="/MarkLogicConfig.java" changelist="98e2193e-8768-4c80-ad22-b67c8a582099" time="1365088087404" ignored="false" />
+    <file path="/spring-context.xml" changelist="98e2193e-8768-4c80-ad22-b67c8a582099" time="1365088455549" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,19 +81,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="MarkLogicConfigTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicConfigTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="40" column="39" selection-start="1393" selection-end="1393" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileContentTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/entity/FileContentTest.java">
+      <file leaf-file-name="MarkLogicDAOTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicDAOTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="62" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0">
+            <state line="30" column="0" selection-start="993" selection-end="993" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MarkLogicInitTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicInitTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="8" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,28 +110,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MarkLogicTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="43" selection-start="2336" selection-end="2336" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dao.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Dao.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/dao/Dao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="17" selection-start="80" selection-end="80" vertical-scroll-proportion="0.12647554">
+            <state line="13" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RESTDao.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/dao/RESTDao.java">
+      <file leaf-file-name="MarkLogicDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="51" selection-start="2625" selection-end="2625" vertical-scroll-proportion="0.0">
+            <state line="19" column="4" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MarkLogicConfig.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="13" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MarkLogicInit.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicInit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="5" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spring-context.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jester/src/main/resources/spring-context.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="29" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.60314685">
               <folding />
             </state>
           </provider>
@@ -164,7 +193,15 @@
       <list>
         <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/io/IORuntimeException.java" />
         <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/dao/RESTDao.java" />
+        <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicConfig.java" />
+        <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicInit.java" />
         <option value="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicTest.java" />
+        <option value="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicConfigTest.java" />
+        <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/providers/marklogic/RESTDao.java" />
+        <option value="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicDAOTest.java" />
+        <option value="$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicInitTest.java" />
+        <option value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicDAO.java" />
+        <option value="$PROJECT_DIR$/jester/src/main/resources/spring-context.xml" />
       </list>
     </option>
   </component>
@@ -473,7 +510,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="io" />
+              <option name="myItemId" value="marklogic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -507,7 +544,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
+              <option name="myItemId" value="io" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -551,6 +588,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_directory_selection" value="$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/providers/marklogic" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -567,7 +605,15 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.MarkLogicTest.testCreateAndRetrieve">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lucasia.tstf.jester.providers.marklogic" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.lucasia.tstf.jester.providers.marklogic" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MarkLogicConfigTest.testCreateAndRetrieveContent">
     <configuration default="false" name="com.lucasia.tstf.jester in jester" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="jester" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -612,13 +658,13 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="MarkLogicTest.testCreateAndRetrieve" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="MarkLogicConfigTest.testCreateAndRetrieveContent" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="jester" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.lucasia.tstf.jester.providers.marklogic" />
-      <option name="MAIN_CLASS_NAME" value="com.lucasia.tstf.jester.providers.marklogic.MarkLogicTest" />
-      <option name="METHOD_NAME" value="testCreateAndRetrieve" />
+      <option name="MAIN_CLASS_NAME" value="com.lucasia.tstf.jester.providers.marklogic.MarkLogicConfigTest" />
+      <option name="METHOD_NAME" value="testCreateAndRetrieveContent" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -725,11 +771,11 @@
     <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JUnit.com.lucasia.tstf.jester in jester" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.FileContentTest.testFileContent" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MarkLogicTest.testCreateAndRetrieve" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MarkLogicConfigTest.testCreateAndRetrieveContent" />
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MarkLogicTest.testCreateAndRetrieve" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MarkLogicConfigTest.testCreateAndRetrieveContent" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.com.lucasia.tstf.jester in jester" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.FileContentTest.testFileContent" />
       </list>
@@ -769,7 +815,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="22" y="22" width="1621" height="968" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -785,8 +831,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2495238" sideWeight="0.7323113" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2676887" sideWeight="0.6780952" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2495238" sideWeight="0.7346698" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2653302" sideWeight="0.6780952" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -900,23 +946,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="43" selection-start="2336" selection-end="2336" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/dao/RESTDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="51" selection-start="2625" selection-end="2625" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/dao/Dao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="80" selection-end="80" vertical-scroll-proportion="0.12647554">
+        <state line="13" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicConfigTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="39" selection-start="1393" selection-end="1393" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicInitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="8" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jester/src/test/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicDAOTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="993" selection-end="993" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="4" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jester/src/main/java/com/lucasia/tstf/jester/providers/marklogic/MarkLogicInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="5" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jester/src/main/resources/spring-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="29" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.60314685">
           <folding />
         </state>
       </provider>

@@ -19,7 +19,7 @@
         </property>
     </bean>
 
-    <bean id="markLogic" class="com.lucasia.tstf.jester.providers.marklogic.MarkLogic">
+    <bean id="markLogicConfig" class="com.lucasia.tstf.jester.providers.marklogic.MarkLogicConfig">
         <constructor-arg name="user" value="${marklogic.rest.user}"/>
         <constructor-arg name="password" value="${marklogic.rest.password}"/>
         <constructor-arg name="serverURL" value="${marklogic.rest.serverUrl}"/>

@@ -10,13 +10,13 @@ import java.net.URISyntaxException;
  * User: lucasia
  */
 @Component
-public class MarkLogic {
+public class MarkLogicConfig {
     private String user;
     private String password;
     private URI serverURL;
     private String docPrefix;
 
-    public MarkLogic(String user, String password, String serverURL, String docPrefix) {
+    public MarkLogicConfig(String user, String password, String serverURL, String docPrefix) {
         this.user = user;
         this.password = password;
         try {

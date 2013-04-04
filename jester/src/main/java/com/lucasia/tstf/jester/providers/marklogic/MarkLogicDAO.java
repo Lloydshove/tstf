@@ -1,5 +1,6 @@
-package com.lucasia.tstf.jester.dao;
+package com.lucasia.tstf.jester.providers.marklogic;
 
+import com.lucasia.tstf.jester.dao.Dao;
 import com.lucasia.tstf.jester.entity.Content;
 import com.lucasia.tstf.jester.entity.URIContent;
 import com.lucasia.tstf.jester.io.IORuntimeException;
@@ -15,7 +16,8 @@ import java.net.URL;
 /**
  * User: lucasia
  */
-public class RESTDao implements Dao<URI, Content> {
+public class MarkLogicDAO implements Dao<URI, Content> {
+
     @Override
     public URIContent get(URI uri) {
         try {

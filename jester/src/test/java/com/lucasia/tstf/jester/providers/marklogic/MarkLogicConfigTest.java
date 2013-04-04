@@ -2,7 +2,6 @@ package com.lucasia.tstf.jester.providers.marklogic;
 
 import com.lucasia.tstf.jester.entity.Content;
 import com.lucasia.tstf.jester.entity.StringContent;
-import com.lucasia.tstf.jester.dao.RESTDao;
 import com.lucasia.tstf.jester.io.IORuntimeException;
 import com.lucasia.tstf.jester.security.PasswordAuthenticator;
 import com.lucasia.tstf.jester.io.IOUtil;
@@ -24,28 +23,26 @@ import java.net.*;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"/spring-context.xml"})
-public class MarkLogicTest {
+public class MarkLogicConfigTest {
 
     @Autowired
-    MarkLogic markLogic;
+    MarkLogicConfig markLogicConfig;
 
     @Test
     public void testConfigLoading() throws URISyntaxException, IOException {
-        Assert.assertNotNull(markLogic);
-        Assert.assertNotNull(markLogic.getUser());
-        Assert.assertNotNull(markLogic.getPassword());
-        Assert.assertNotNull(markLogic.getServerURL());
-        Assert.assertNotNull(markLogic.getDocPrefix());
+        Assert.assertNotNull(markLogicConfig);
+        Assert.assertNotNull(markLogicConfig.getUser());
+        Assert.assertNotNull(markLogicConfig.getPassword());
+        Assert.assertNotNull(markLogicConfig.getServerURL());
+        Assert.assertNotNull(markLogicConfig.getDocPrefix());
     }
 
     @Before
     public void setUp() throws Exception {
-        new PasswordAuthenticator().setDefaultAuthenticator(markLogic.getUser(), markLogic.getPassword());
+        new PasswordAuthenticator().setDefaultAuthenticator(markLogicConfig.getUser(), markLogicConfig.getPassword());
     }
 
     @Test
-    // @Ignore // integration test
-
     /**
      *  Equivalent of:
      *  curl --anyauth --user user:pass -X PUT -d@'./two.json' 'http://server:port/v1/documents?uri=/json/two.json'
@@ -53,15 +50,15 @@ public class MarkLogicTest {
      *  curl --anyauth --user user:pass -X DELETE -i 'http://server:port:8003/v1/documents?uri=/xml/pom.xml'
      *
      */
-    public void testCreateAndRetrieve() throws Exception {
+    public void testCreateAndRetrieveContent() throws Exception {
         // define content to add
         final String contentStr = "<text>Hello World!</text>";
         final URI contentURI = new URI("/xml/hello-world.xml");
 
-        final StringContent content = new StringContent(markLogic.getDocURI(contentURI), contentStr);
+        final StringContent content = new StringContent(markLogicConfig.getDocURI(contentURI), contentStr);
 
 
-        final RESTDao dao = new RESTDao();
+        final MarkLogicDAO dao = new MarkLogicDAO();
 
 
         dao.save(content);  // save content
@@ -80,6 +77,8 @@ public class MarkLogicTest {
             Assert.assertEquals(FileNotFoundException.class, e.getWrappedException().getClass());
         }
     }
+
+
 
 
 }
