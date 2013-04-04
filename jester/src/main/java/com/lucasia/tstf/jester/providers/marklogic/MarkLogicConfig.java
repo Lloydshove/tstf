@@ -1,6 +1,5 @@
 package com.lucasia.tstf.jester.providers.marklogic;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 
 import java.net.URI;
@@ -8,24 +7,25 @@ import java.net.URISyntaxException;
 
 /**
  * User: lucasia
+ *
  */
 @Component
 public class MarkLogicConfig {
     private String user;
     private String password;
-    private URI serverURL;
-    private String docPrefix;
+    private URI configURL;
 
-    public MarkLogicConfig(String user, String password, String serverURL, String docPrefix) {
+    private URI restURL;
+    private String restDocPrefix;
+
+    public MarkLogicConfig(String user, String password, String configURL, String restURL, String restDocPrefix) throws URISyntaxException {
         this.user = user;
         this.password = password;
-        try {
-            this.serverURL = new URI(serverURL);
-        } catch (URISyntaxException e) {
-            throw new RuntimeException(e);
-        }
 
-        this.docPrefix = docPrefix;
+        this.configURL = new URI(configURL);
+        this.restURL = new URI(restURL);
+
+        this.restDocPrefix = restDocPrefix;
 
     }
 
@@ -37,16 +37,20 @@ public class MarkLogicConfig {
         return password;
     }
 
-    public URI getServerURL() {
-        return serverURL;
+    public URI getConfigURL() {
+        return configURL;
     }
 
-    public String getDocPrefix() {
-        return docPrefix;
+    public URI getRestURL() {
+        return restURL;
+    }
+
+    public String getRestDocPrefix() {
+        return restDocPrefix;
     }
 
     public URI getDocURI(URI docuURI) {
-        return serverURL.resolve(docPrefix + docuURI.toASCIIString());
+        return restURL.resolve(restDocPrefix + docuURI.toASCIIString());
     }
 
 

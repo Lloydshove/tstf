@@ -20,4 +20,13 @@ public class IOUtil {
         return new ByteArrayInputStream(str.getBytes());
     }
 
+    public static URL getUrl(URI uri) {
+        final URL url;
+        try {
+            url = uri.toURL();
+        } catch (MalformedURLException e) {
+            throw new IORuntimeException(e);
+        }
+        return url;
+    }
 }

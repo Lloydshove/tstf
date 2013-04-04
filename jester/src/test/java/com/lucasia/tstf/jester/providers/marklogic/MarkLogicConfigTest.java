@@ -1,10 +1,10 @@
 package com.lucasia.tstf.jester.providers.marklogic;
 
+import com.lucasia.tstf.jester.io.IOUtil;
 import com.lucasia.tstf.jester.entity.Content;
 import com.lucasia.tstf.jester.entity.StringContent;
 import com.lucasia.tstf.jester.io.IORuntimeException;
 import com.lucasia.tstf.jester.security.PasswordAuthenticator;
-import com.lucasia.tstf.jester.io.IOUtil;
 import org.custommonkey.xmlunit.XMLAssert;
 import org.junit.Assert;
 import org.junit.Before;
@@ -33,8 +33,8 @@ public class MarkLogicConfigTest {
         Assert.assertNotNull(markLogicConfig);
         Assert.assertNotNull(markLogicConfig.getUser());
         Assert.assertNotNull(markLogicConfig.getPassword());
-        Assert.assertNotNull(markLogicConfig.getServerURL());
-        Assert.assertNotNull(markLogicConfig.getDocPrefix());
+        Assert.assertNotNull(markLogicConfig.getRestURL());
+        Assert.assertNotNull(markLogicConfig.getRestDocPrefix());
     }
 
     @Before

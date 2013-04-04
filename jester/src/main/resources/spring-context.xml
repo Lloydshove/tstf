@@ -20,10 +20,11 @@
     </bean>
 
     <bean id="markLogicConfig" class="com.lucasia.tstf.jester.providers.marklogic.MarkLogicConfig">
-        <constructor-arg name="user" value="${marklogic.rest.user}"/>
-        <constructor-arg name="password" value="${marklogic.rest.password}"/>
-        <constructor-arg name="serverURL" value="${marklogic.rest.serverUrl}"/>
-        <constructor-arg name="docPrefix" value="${marklogic.rest.docPrefix}"/>
+        <constructor-arg name="user" value="${marklogic.user}"/>
+        <constructor-arg name="password" value="${marklogic.password}"/>
+        <constructor-arg name="configURL" value="${marklogic.configURL}"/>
+        <constructor-arg name="restURL" value="${marklogic.restURL}"/>
+        <constructor-arg name="restDocPrefix" value="${marklogic.restDocPrefix}"/>
     </bean>
 
 </beans>

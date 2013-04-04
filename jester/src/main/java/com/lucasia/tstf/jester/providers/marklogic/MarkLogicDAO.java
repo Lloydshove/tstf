@@ -1,27 +1,30 @@
 package com.lucasia.tstf.jester.providers.marklogic;
 
+import com.lucasia.tstf.jester.http.HttpURLConnectionWrapper;
+import com.lucasia.tstf.jester.io.IOUtil;
 import com.lucasia.tstf.jester.dao.Dao;
 import com.lucasia.tstf.jester.entity.Content;
 import com.lucasia.tstf.jester.entity.URIContent;
 import com.lucasia.tstf.jester.io.IORuntimeException;
-import com.lucasia.tstf.jester.io.IOUtil;
 
 import java.io.IOException;
-import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URL;
 
 /**
  * User: lucasia
+ *
+ * TODO: look to replace with Apache HTTP Libraries
+ * http://hc.apache.org/
+ *
  */
 public class MarkLogicDAO implements Dao<URI, Content> {
 
     @Override
     public URIContent get(URI uri) {
         try {
-            final HttpURLConnection conn = (HttpURLConnection) getUrl(uri).openConnection();
+            final HttpURLConnection conn = (HttpURLConnection) IOUtil.getUrl(uri).openConnection();
             conn.setRequestMethod("GET"); // defaults to GET, but be explicit
             return new URIContent(uri, conn.getInputStream());
 
@@ -34,21 +37,14 @@ public class MarkLogicDAO implements Dao<URI, Content> {
     public void save(Content content) {
         try  {
 
-            final URL url = getUrl(content.getURI());
+            final URL url = IOUtil.getUrl(content.getURI());
             final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("PUT");
             conn.setDoOutput(true);
 
-            final OutputStreamWriter out = new OutputStreamWriter(conn.getOutputStream());
+            final String body = IOUtil.streamToString(content.getContentStream()); // TODO: replace with pipe to output
 
-            final String str = IOUtil.streamToString(content.getContentStream()); // TODO: replace with pipe to output
-
-            out.write(str);
-            out.flush();
-            out.close();
-            conn.disconnect();
-
-            validateResponse(conn);
+            new HttpURLConnectionWrapper(conn).sendBody(body);
 
         } catch (IOException e) {
             throw new IORuntimeException(e);
@@ -58,37 +54,17 @@ public class MarkLogicDAO implements Dao<URI, Content> {
     @Override
     public void delete(Content content) {
         try {
-            final URL url = getUrl(content.getURI());
+            final URL url = IOUtil.getUrl(content.getURI());
 
             final HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("DELETE");
             conn.setDoOutput(true);
-            // conn.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
 
-            validateResponse(conn);
+            new HttpURLConnectionWrapper(conn).validateResponse();
 
         } catch (IOException e) {
             throw new IORuntimeException(e);
         }
-    }
-
-    private void validateResponse(HttpURLConnection conn) throws IOException {
-
-
-        if (!Integer.toString(conn.getResponseCode()).startsWith("2")) { // 2XX is Success code
-            String error = conn.getErrorStream() != null ? IOUtil.streamToString(conn.getErrorStream()) : " No error stream.";
-            throw new RuntimeException("Response code + '" + conn.getResponseCode() + "'. " + error);
-        }
-    }
-
-    private URL getUrl(URI uri) {
-        final URL url;
-        try {
-            url = uri.toURL();
-        } catch (MalformedURLException e) {
-            throw new IORuntimeException(e);
-        }
-        return url;
     }
 
 }

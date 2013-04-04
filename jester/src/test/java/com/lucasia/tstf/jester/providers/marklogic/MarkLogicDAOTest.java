@@ -1,9 +1,9 @@
 package com.lucasia.tstf.jester.providers.marklogic;
 
+import com.lucasia.tstf.jester.io.IOUtil;
 import com.lucasia.tstf.jester.entity.Content;
 import com.lucasia.tstf.jester.entity.StringContent;
 import com.lucasia.tstf.jester.io.IORuntimeException;
-import com.lucasia.tstf.jester.io.IOUtil;
 import com.lucasia.tstf.jester.security.PasswordAuthenticator;
 import org.custommonkey.xmlunit.XMLAssert;
 import org.junit.Assert;
@@ -15,9 +15,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.net.URI;
-import java.net.URISyntaxException;
 
 /**
  * User: lucasia
