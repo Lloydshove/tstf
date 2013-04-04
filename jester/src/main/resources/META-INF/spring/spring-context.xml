@@ -22,6 +22,7 @@
     <bean id="markLogic" class="com.lucasia.tstf.jester.providers.marklogic.MarkLogic">
         <constructor-arg name="user" value="${datasource.user}"/>
         <constructor-arg name="password" value="${datasource.password}"/>
+        <constructor-arg name="url" value="${datasource.url}"/>
     </bean>
 
 </beans>

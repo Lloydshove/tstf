@@ -4,6 +4,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
+import java.sql.DriverManager;
 
 /**
  * User: lucasia
@@ -12,12 +13,13 @@ import javax.sql.DataSource;
 public class MarkLogic {
     private String user;
     private String password;
+    private String url;
 
-    public MarkLogic(String user, String password) {
+    public MarkLogic(String user, String password, String url) {
         this.user = user;
         this.password = password;
+        this.url = url;
     }
-
 
     public String getUser() {
         return user;
@@ -27,12 +29,8 @@ public class MarkLogic {
         return password;
     }
 
-    @Override
-    public String toString() {
-        return "MarkLogic{" +
-                "user='" + user + '\'' +
-                ", password='" + password + '\'' +
-                '}';
+    public String getUrl() {
+        return url;
     }
 
     public static void main(String[] args){

@@ -1,7 +1,9 @@
 package com.lucasia.tstf.jester.providers.marklogic;
 
 import com.lucasia.tstf.jester.entity.StringContent;
+import com.lucasia.tstf.jester.security.PasswordAuthenticator;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,7 +12,9 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.io.IOException;
-import java.net.*;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URLConnection;
 
 /**
  * User: lucasia
@@ -27,29 +31,25 @@ public class MarkLogicTest {
         Assert.assertNotNull(markLogic);
         Assert.assertNotNull(markLogic.getUser());
         Assert.assertNotNull(markLogic.getPassword());
+        Assert.assertNotNull(markLogic.getUrl());
+    }
+
+    @Before
+    public void setUp() throws Exception {
+        new PasswordAuthenticator().setDefaultAuthenticator(markLogic.getUser(), markLogic.getPassword());
     }
 
     @Test
-    @Ignore // still very much a work in progress
+    @Ignore // integration test
     public void testRetrieve() throws URISyntaxException, IOException {
-        URI serverURI = new URI("http://giniro.local:8003/v1/documents?uri=/json/two.json&format=json");
+        String json = "{\"two\":{\"child\":\"I come to bury Caesar, not to praise him.\"}}";
 
-        Authenticator.setDefault(new Authenticator() {
-            protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(markLogic.getUser(), markLogic.getPassword().toCharArray());
-            }
-        });
+        final URI serverURI = new URI(markLogic.getUrl() + "/v1/documents?uri=/json/two.json&format=json");
 
-        URL url = serverURI.toURL();
+        final URLConnection connection = serverURI.toURL().openConnection();
 
-        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-        connection.setRequestMethod("GET");
-
-        final String s = StringContent.streamToString(connection.getInputStream());
-
-        System.out.println("s = " + s);
-
-
+        Assert.assertEquals(json, StringContent.streamToString(connection.getInputStream()));
     }
+
 
 }
